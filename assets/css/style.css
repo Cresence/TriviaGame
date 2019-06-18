@@ -1,0 +1,27 @@
+html {
+    text-align: center;
+}
+header {
+    width: 100%;
+    background-color: grey;
+    line-height: 250%;
+    padding: 1%;
+}
+#myForm {
+    position: absolute;
+    width: 100%;
+}
+.ansBox {
+    width: 100%;
+}
+#start-quiz {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    left: 1%;
+    top: 200px;
+}
+#time-display {
+    position: relative;
+    /* bottom: 100px; */
+}
