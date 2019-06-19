@@ -1,27 +1,51 @@
 html {
     text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+button {
+    outline-style: ridge;
 }
 header {
-    width: 100%;
-    background-color: grey;
+    background-image: url('../images/soda-bg.jpg');
+    background-size: cover;
     line-height: 250%;
     padding: 1%;
+    font-weight: bolder;
+    box-shadow: 0 0 10px;
+    padding: 2%;
+}
+.quiz {
+    margin: 2%;
+}
+#head-text{
+    color: white;
+    text-shadow: -2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+        2px 2px 0 #000;
+        font-size: 2rem;
 }
 #myForm {
     position: absolute;
     width: 100%;
+    font-size: 1rem;
 }
 .ansBox {
     width: 100%;
+
 }
 #start-quiz {
     position: relative;
-    height: 200px;
-    width: 200px;
+    background: url('../images/soda-clipart.png');
+    height: 300px;
+    width: 174px;
     left: 1%;
     top: 200px;
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
 }
-#time-display {
+#time-box {
     position: relative;
-    /* bottom: 100px; */
+    margin-top: 3%;
 }

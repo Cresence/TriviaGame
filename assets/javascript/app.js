@@ -1,9 +1,8 @@
 $(document).ready(function(event){
-    var event = $(document).onsubmit
     // setTimeout(chkAns, 30000)
     var goodAns = 0;
     var badAns = 0;
-    var time = 30;
+    var time = 120;
     $('#myForm').hide();
     $('#time-display').hide();
 
@@ -44,33 +43,15 @@ $(document).ready(function(event){
             time--;
         }
     }
-
-    $(':radio', '#q1').change(function usrAns1(){
+    $(':radio').change(function usrAns(){
         // console.log(this.value);
-        if (this.value != 'Coca Cola'){
+        if (this.value != 'good'){
             badAns++;
         }else {
             goodAns++
         }
         // usrAns.push(this.value);
     });
-    $(':radio', '#q2').change(function usrAns2(){
-        // console.log(this.value);
-        if (this.value != 'blue'){
-            badAns++;
-        }else {
-            goodAns++
-        }
-    });
-    $(':radio', '#q3').change(function usrAns3(){
-        // console.log(this.value);
-        if (this.value != '2'){
-            badAns++;
-        }else {
-            goodAns++
-        }
-    });
-
     $('#chk-ans').on('click', function(event){
         chkAns();
         event.preventDefault();

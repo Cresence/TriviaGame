@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -15,27 +15,49 @@
 <body>
     <header><p id="head-text">Welcome To A "Pop" Quiz!</p></header>
 
-    <button id="start-quiz">Start Quiz?</button>
-    <div><span id="time-display">Time Remaining:</span></div>
+    <button id="start-quiz"></button>
+    <div id="time-box"><span id="time-display">Time Remaining:</span></div>
 
     <form id="myForm">
         <div class="quiz" id="q1">
-            <p>Pick a soda:</p>
-            <input type="radio" name="soda" value="Pepsi">Pepsi
-            <input type="radio" name="soda" value="Coca Cola">Coca Cola
-            <input type="radio" name="soda" value="Sprite">Sprite
+            <p>What is the oldest soft drink company in the world?</p>
+            <input type="radio" name="a1" value="bad">Pepsi
+            <input type="radio" name="a1" value="bad">Coca Cola
+            <input type="radio" name="a1" value="good">Schweppes
+            <input type="radio" name="a1" value="bad">Sprite
+            <input type="radio" name="a1" value="Dr. Pepper">Dr. Pepper
         </div>
         <div class="quiz" id="q2">
-            <p>Pick a color:</p>
-            <input type="radio" name="red" value="red">Red
-            <input type="radio" name="green" value="green">Green
-            <input type="radio" name="blue" value="blue">Blue
+            <p>What is the highest soft drink grossing revenue of 2017-2018?</p>
+            <input type="radio" name="a2" value="bad">Jugos Del Valle
+            <input type="radio" name="a2" value="bad">PepsiCo
+            <input type="radio" name="a2" value="bad">Danone
+            <input type="radio" name="a2" value="good">Nestlé
+            <input type="radio" name="a2" value="bad">Fioravanti
         </div>
         <div class="quiz" id="q3">
-            <p>Pick a number:</p>
-            <input type="radio" name="one" value="1">1
-            <input type="radio" name="two" value="2">2
-            <input type="radio" name="three" value="3">3
+            <p>What year did soft drink companies start using aluminium cans?</p>
+            <input type="radio" name="a3" value="good">1960s
+            <input type="radio" name="a3" value="bad">1980s
+            <input type="radio" name="a3" value="bad">1940s
+            <input type="radio" name="a3" value="bad">1900s
+            <input type="radio" name="a3" value="bad">1970s
+        </div>
+        <div class="quiz" id="q4">
+            <p>How many different soft drink flavor option exist in the 'Coke Freestyle Machine' at <em>least?</em></p>
+            <input type="radio" name="a4" value="bad">246
+            <input type="radio" name="a4" value="bad">87
+            <input type="radio" name="a4" value="good">127
+            <input type="radio" name="a4" value="bad">42
+            <input type="radio" name="a4" value="bad">69
+        </div>
+        <div class="quiz" id="q5">
+            <p>When was the oldest soft drink company founded?</p>
+            <input type="radio" name="a5" value="bad">1886
+            <input type="radio" name="a5" value="good">1783
+            <input type="radio" name="a5" value="bad">1776
+            <input type="radio" name="a5" value="bad">1914
+            <input type="radio" name="a5" value="bad">1820
         </div>
         <br>
         <input id="chk-ans" type="submit" value="Submit">
