@@ -3,6 +3,7 @@ $(document).ready(function(event){
     var goodAns = 0;
     var badAns = 0;
     var time = 120;
+    var timerId = 0;
     $('#myForm').hide();
     $('#time-display').hide();
 
@@ -14,10 +15,12 @@ $(document).ready(function(event){
         $('#ansShow').append('<br>' + 'Incorrect Answers: ' + badAns);
     }
 
-    $('#start-quiz').on('click', countdown, function(){
+    $('#start-quiz').on('click', function(){
         $('#myForm').show();
         $('#start-quiz').hide();
         $('#time-display').show();
+        timerId = setInterval(countdown, 1000);
+        countdown();
     });
 
     // function start(){
@@ -32,7 +35,6 @@ $(document).ready(function(event){
     //     $('#time-display').text('Time Remaining: ' + time + ' seconds');
     // }
 
-    var timerId = setInterval(countdown, 1000);
 
     function countdown(){
         if (time == 0) {
